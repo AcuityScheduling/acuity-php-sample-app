@@ -1,0 +1,12 @@
+{
+  "name": "php-sample-app",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:AcuityScheduling/acuity-php.git"
+    }
+  ],
+  "require": {
+    "acuityscheduling/acuityscheduling": "dev-master"
+  }
+}

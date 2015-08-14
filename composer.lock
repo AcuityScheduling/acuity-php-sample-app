@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "c304a5a80d7251cd539914c1cc518ccc",
+    "packages": [
+        {
+            "name": "acuityscheduling/acuityscheduling",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:AcuityScheduling/acuity-php.git",
+                "reference": "ab1024608562c5c825770489cde77280aa391269"
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "AcuityScheduling": "src/",
+                    "AcuitySchedulingOAuth": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Acuity Scheduling, Inc.",
+                    "email": "developers@acuityscheduling.com",
+                    "homepage": "https://developers.acuityscheduling.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Acuity Scheduling PHP SDK.",
+            "homepage": "https://github.com/AcuityScheduling/acuity-php",
+            "keywords": [
+                "acuity",
+                "acuity scheduling",
+                "api",
+                "oauth",
+                "oauth2",
+                "sdk"
+            ],
+            "support": {
+                "email": "developers@acuityscheduling.com",
+                "issues": "https://github.com/AcuityScheduling/acuity-php/issues"
+            },
+            "time": "2015-08-14 20:34:46"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "acuityscheduling/acuityscheduling": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
