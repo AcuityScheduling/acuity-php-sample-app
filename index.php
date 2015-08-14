@@ -1,6 +1,6 @@
 <?php
-require_once('./vendor/autoload.php');
-require_once('./config.php');
+require_once('vendor/autoload.php');
+require_once('config.php');
 
 ini_set('session.save_path', '');
 session_start();
@@ -22,10 +22,14 @@ if ($method === 'GET' && $path === '/') {
   if ($acuity->isConnected()) {
     $response = $acuity->request('me');
     $me = $response['body'];
+    $today = strftime('%Y-%m-%d');
     $response = $acuity->request('appointments', [
-      'minDate' => strftime('%Y-%m-%d'),
-      'maxDate' => strftime('%Y-%m-%d')
+      'query' => [
+        'minDate' => $today,
+        'maxDate' => $today
+      ]
     ]);
+    $agenda = $response['body'];
   } else {
     $authorizationUrl = $acuity->getAuthorizeUrl(['scope' => 'api-v1']);
   }

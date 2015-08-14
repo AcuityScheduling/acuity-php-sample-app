@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:AcuityScheduling/acuity-php.git",
-                "reference": "ab1024608562c5c825770489cde77280aa391269"
+                "reference": "d45dc9c1e7f1f9b0cd4105c62db92ab4a2922771"
             },
             "require": {
                 "ext-curl": "*",
@@ -47,7 +47,7 @@
                 "email": "developers@acuityscheduling.com",
                 "issues": "https://github.com/AcuityScheduling/acuity-php/issues"
             },
-            "time": "2015-08-14 20:34:46"
+            "time": "2015-08-14 21:32:37"
         }
     ],
     "packages-dev": [],
