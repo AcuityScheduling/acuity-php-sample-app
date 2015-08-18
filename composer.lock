@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c304a5a80d7251cd539914c1cc518ccc",
+    "hash": "7d67416c3eb342b03536a2afcbe6cdf0",
     "packages": [
         {
             "name": "acuityscheduling/acuityscheduling",
-            "version": "dev-master",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:AcuityScheduling/acuity-php.git",
-                "reference": "d45dc9c1e7f1f9b0cd4105c62db92ab4a2922771"
+                "reference": "d69dee368441ca18a5438fefbc284e380b5f4b2b"
             },
             "require": {
                 "ext-curl": "*",
@@ -25,6 +25,9 @@
                     "AcuitySchedulingOAuth": "src/"
                 }
             },
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Acuity Scheduling, Inc.",
@@ -33,7 +36,7 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Acuity Scheduling PHP SDK.",
+            "description": "Acuity Scheduling PHP SDK.  Examples and a standard library for Acuity Scheduling integration.",
             "homepage": "https://github.com/AcuityScheduling/acuity-php",
             "keywords": [
                 "acuity",
@@ -45,17 +48,16 @@
             ],
             "support": {
                 "email": "developers@acuityscheduling.com",
+                "source": "https://github.com/AcuityScheduling/acuity-php",
                 "issues": "https://github.com/AcuityScheduling/acuity-php/issues"
             },
-            "time": "2015-08-14 21:32:37"
+            "time": "2015-08-18 23:22:29"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "acuityscheduling/acuityscheduling": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
