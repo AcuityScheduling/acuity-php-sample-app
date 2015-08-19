@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c060e785eb2dcb0d2094bb3b623fc62c",
+    "hash": "398b44f352fa99e5d64c72a5aec2d49b",
     "packages": [
         {
             "name": "acuityscheduling/acuityscheduling",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AcuityScheduling/acuity-php.git",
-                "reference": "6857ce7245f59d5aeed318ee7a4f9690266159ce"
+                "reference": "8ed01a1e23bbce0a84f203f6344179dcc8ab4193"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AcuityScheduling/acuity-php/zipball/6857ce7245f59d5aeed318ee7a4f9690266159ce",
-                "reference": "6857ce7245f59d5aeed318ee7a4f9690266159ce",
+                "url": "https://api.github.com/repos/AcuityScheduling/acuity-php/zipball/8ed01a1e23bbce0a84f203f6344179dcc8ab4193",
+                "reference": "8ed01a1e23bbce0a84f203f6344179dcc8ab4193",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "oauth2",
                 "sdk"
             ],
-            "time": "2015-08-19 00:22:20"
+            "time": "2015-08-19 15:33:51"
         }
     ],
     "packages-dev": [],
