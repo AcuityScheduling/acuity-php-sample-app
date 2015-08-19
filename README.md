@@ -1,5 +1,7 @@
 # Acuity Scheduling PHP Sample App
 
+An OAuth2 sample app using the [Acuity Scheduling PHP dev kit](https://github.com/AcuityScheduling/acuity-php).
+
 ## Setup
 
 First install the dependencies (Acuity Scheduling's PHP dev kit) using composer.
