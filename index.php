@@ -20,16 +20,14 @@ $path   = $_SERVER['PATH_INFO'] ? $_SERVER['PATH_INFO'] : '/';
 if ($method === 'GET' && $path === '/') {
 
   if ($acuity->isConnected()) {
-    $response = $acuity->request('me');
-    $me = $response['body'];
+    $me = $acuity->request('me');
     $today = strftime('%Y-%m-%d');
-    $response = $acuity->request('appointments', [
+    $agenda = $acuity->request('appointments', [
       'query' => [
         'minDate' => $today,
         'maxDate' => $today
       ]
     ]);
-    $agenda = $response['body'];
   } else {
     $authorizationUrl = $acuity->getAuthorizeUrl(['scope' => 'api-v1']);
   }
@@ -39,7 +37,7 @@ if ($method === 'GET' && $path === '/') {
 } else
 if ($method === 'GET' && $path === '/oauth2') {
   $response = $acuity->requestAccessToken($_GET['code']);
-  $accessToken = $response['body']['access_token'];
+  $accessToken = $response['access_token'];
   if ($accessToken) {
     $_SESSION['acuityAccessToken'] = $accessToken;
     header('Location: /');

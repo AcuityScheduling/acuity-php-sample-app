@@ -6,14 +6,18 @@ This is the Acuity Sample PHP Application.
 </p>
 
 <?php if (!$acuity->isConnected()) { ?>
-<a href="<?php echo $authorizationUrl; ?>">Connect to Acuity</a>
+  <a href="<?php echo $authorizationUrl; ?>">Connect to Acuity</a>
 <?php } else { ?>
-<a href="/disconnect">Disconnect</a>
-<h2>Hello, <?php echo $me['name']; ?></h2>
-<p>Here is your client scheduling page:</p>
-<iframe src="<?php echo $me['schedulingPage']; ?>" width="800" height="800" frameBorder="0"></iframe>
-<script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>
-<h2>Daily Agenda for <?php echo $today; ?>:</h2>
-<pre>
-<?php print_r($agenda); ?>
+  <a href="/disconnect">Disconnect</a>
+  <h2>Hello, <?php echo $me['name']; ?></h2>
+  <h2>Daily Agenda for <?php echo $today; ?>:</h2>
+  <ul>
+  <?php foreach ($agenda as $appointment) { ?>
+    <li>
+    <?php echo "{$appointment['time']} &ndash; {$appointment['endTime']}: {$appointment['firstName']} {$appointment['lastName']} with {$appointment['calendar']}"; ?>
+    </li>
+  <?php } ?>
+  </ul>
+  <h2>Client Scheduling Page:</h2>
+  <?php echo $acuity->getEmbedCode($me['id']); ?>
 <?php } ?>
