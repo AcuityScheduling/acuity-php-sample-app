@@ -1,5 +1,23 @@
 {
   "name": "acuityscheduling/php-sample-app",
+  "type": "project",
+	"description": "A sample OAuth2 application using the Acuity Scheduling PHP dev kit.",
+	"license": "MIT",
+	"keywords": [ "acuity", "acuity scheduling", "api", "example", "oauth", "oauth2" ],
+	"homepage": "https://github.com/AcuityScheduling/acuity-php-sample-app",
+	"authors": [
+		{
+			"name": "Acuity Scheduling, Inc.",
+			"email": "developers@acuityscheduling.com",
+			"homepage": "https://developers.acuityscheduling.com/",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "developers@acuityscheduling.com",
+		"source": "https://github.com/AcuityScheduling/acuity-php",
+		"issues": "https://github.com/AcuityScheduling/acuity-php/issues"
+	},
   "require": {
     "acuityscheduling/acuityscheduling": "^0.1.1"
   }
