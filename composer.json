@@ -1,6 +1,6 @@
 {
   "name": "acuityscheduling/php-sample-app",
   "require": {
-    "acuityscheduling/acuityscheduling": "^0.0.1"
+    "acuityscheduling/acuityscheduling": "^0.1.0"
   }
 }

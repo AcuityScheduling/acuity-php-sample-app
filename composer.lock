@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7d67416c3eb342b03536a2afcbe6cdf0",
+    "hash": "c060e785eb2dcb0d2094bb3b623fc62c",
     "packages": [
         {
             "name": "acuityscheduling/acuityscheduling",
-            "version": "0.0.1",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:AcuityScheduling/acuity-php.git",
-                "reference": "d69dee368441ca18a5438fefbc284e380b5f4b2b"
+                "url": "https://github.com/AcuityScheduling/acuity-php.git",
+                "reference": "6857ce7245f59d5aeed318ee7a4f9690266159ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AcuityScheduling/acuity-php/zipball/6857ce7245f59d5aeed318ee7a4f9690266159ce",
+                "reference": "6857ce7245f59d5aeed318ee7a4f9690266159ce",
+                "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
@@ -25,6 +31,7 @@
                     "AcuitySchedulingOAuth": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -46,12 +53,7 @@
                 "oauth2",
                 "sdk"
             ],
-            "support": {
-                "email": "developers@acuityscheduling.com",
-                "source": "https://github.com/AcuityScheduling/acuity-php",
-                "issues": "https://github.com/AcuityScheduling/acuity-php/issues"
-            },
-            "time": "2015-08-18 23:22:29"
+            "time": "2015-08-19 00:22:20"
         }
     ],
     "packages-dev": [],
